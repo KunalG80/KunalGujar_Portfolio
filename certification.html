@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Certificates</title>
+        <style>
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f0f5ff; /* Light night blue background */
+                transition:
+                    background-color 0.3s ease,
+                    color 0.3s ease;
+            }
+            header {
+                background: linear-gradient(90deg, #6a11cb, #2575fc);
+                padding: 20px 0;
+                text-align: center;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            h1,
+            h2,
+            h3 {
+                margin: 0;
+            }
+            h1 {
+                font-size: 72px; /* Increased font size */
+                margin-bottom: 10px;
+                color: #000; /* Dark font color */
+                font-weight: bold; /* Bold font */
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* fallback font */
+                text-transform: uppercase;
+                text-shadow: 4px 4px 0px #999;
+            }
+            h2 {
+                font-size: 24px;
+                color: #000; /* Dark font color */
+                font-weight: bold; /* Bold font */
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* fallback font */
+            }
+            nav {
+                background-color: #333;
+                padding: 10px 0;
+            }
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+            nav ul li {
+                display: inline;
+                margin: 0 10px;
+            }
+            nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 16px;
+            }
+            section {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            .container {
+                max-width: 800px;
+                margin: auto;
+                padding: 0 20px;
+            }
+            .card {
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                margin-bottom: 20px;
+                text-align: left;
+                border: 1px solid #ccc; /* Silver grey border line */
+                font-family: "Times New Roman", Times, serif; /* Times New Roman font */
+            }
+            .rhombus-gallery {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 20px auto;
+            }
+            .rhombus-box {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                margin: 20px;
+                transform: rotate(-45deg);
+                overflow: hidden;
+            }
+            .rhombus-box::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 141%;
+                height: 141%;
+                background: #ccc;
+                transform: rotate(45deg);
+                z-index: -1;
+            }
+            .certificate-details {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+                text-align: center;
+                color: #fff;
+            }
+            .certificate-pdf {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Kunal Gujar</h1>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li>
+                        <a href="researchpublication.html"
+                            >Research Publications</a
+                        >
+                    </li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="rhombus-gallery">
+                <div class="rhombus-box">
+                    <img
+                        src="certificate1.jpg"
+                        alt="Certificate 1"
+                        class="certificate-pdf"
+                    />
+                    <div class="certificate-details">
+                        <p>Certificate Title 1</p>
+                        <p>Description or Details</p>
+                    </div>
+                </div>
+                <div class="rhombus-box">
+                    <img
+                        src="certificate2.jpg"
+                        alt="Certificate 2"
+                        class="certificate-pdf"
+                    />
+                    <div class="certificate-details">
+                        <p>Certificate Title 2</p>
+                        <p>Description or Details</p>
+                    </div>
+                </div>
+                <!-- Add more rhombus boxes for additional certificates -->
+            </div>
+        </section>
+    </body>
+</html>

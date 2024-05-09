@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Kunal Gujar</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f5ff; /* Light night blue background */
+            transition:
+                background-color 0.3s ease,
+                color 0.3s ease;
+        }
+        header {
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+        }
+        h1 {
+            font-size: 72px; /* Increased font size */
+            margin-bottom: 10px;
+            color: #000; /* Dark font color */
+            font-weight: bold; /* Bold font */
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* fallback font */
+            text-transform: uppercase;
+              text-shadow: 4px 4px 0px #999;
+        }
+        h2 {
+            font-size: 24px;
+            color: #000; /* Dark font color */
+            font-weight: bold; /* Bold font */
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* fallback font */
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        section {
+            text-align: center;
+                margin-bottom: 40px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+            border: 1px solid #ccc; /* Silver grey border line */
+            font-family: "Times New Roman", Times, serif; /* Times New Roman font */
+        }
+        .about-me {
+            font-style: italic; /* Italic style */
+            text-align: justify;
+                  max-width: 1000px; /* Adjust the width as needed */
+                  margin: 1 auto; /* Center the text box */
+                  font-size: 18px; /* Adjust the font size as needed */
+                  line-height: 1.0; /* Adjust the line height as needed */
+        }
+        .profile-photo {
+            border-radius: 70%;
+            object-position: center;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            float: left;
+            margin-right: 30px;
+        }
+        .typing-animation {
+            overflow: hidden;
+            border-right: 0.15em solid orange;
+            white-space: nowrap;
+            margin: 1 auto;
+            letter-spacing: 0.15em;
+            animation:
+                typing 2.5s steps(40, end),
+                blink-caret 0.75s step-end infinite;
+        }
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        @keyframes blink-caret {
+            from,
+            to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kunal Gujar</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="researchpublication.html">Research Publications</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+            <div class="container">
+                <div class="card">
+                    <h2>About Me</h2>
+                    <img
+                        src="/Users/kunal_gujar/Documents/P. Documents/Personal/Personal/_MG_9604-j.jpg"
+                        alt="Profile Photo"
+                        class="profile-photo"
+                    />
+                    <div class="about-me">
+                            <span class="typing-animation">
+                                Hey, Myself Kunal Gujar!
+                                <p>
+                                    <n>A hardworking, meticulous, and organized individual</n>
+                                    <n><br>seeking an Entry-level position in a reputable organization</br></n>
+                                    <n>to expand and utilize my learning skills,and knowledge.</n>
+                                    <n><br> </br></n>
+                                    <n>Possesses excellent communication skills has an eye for<n>
+                                    <br><n>detail and is willing to contribute ideas and learn new</n></br>
+                                    <n>things. but i can learn new things quickly and do my work</n>
+                                    <br><n>honestly.</n></br>
+                                </p>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Add more sections/content as needed -->
+</body>
+</html>
